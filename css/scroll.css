@@ -1,0 +1,112 @@
+        .whatsapp-main
+		{
+			position: fixed;
+			bottom: 10px;
+			right: 40px;
+			text-align: right;
+			z-index: 10;
+			width: 100%;
+            
+		}
+
+		
+        
+
+		.menu{
+			position: fixed;
+			width: 150px;
+			height: 150px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+            z-index: 200;
+            bottom: 48px;
+            right: 2px ;
+		}
+		.menu .toggle{
+			position: relative;
+			height: 50px;
+			width: 50px;
+			background: #fff;
+			border-radius: 50%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			color: #333;
+			font-size: 2rem;
+			cursor: pointer;
+			transition: 1.25s;
+			box-shadow: 0 3px 4px rgba(0,0,0,0.15);
+			z-index: 1000;
+		}
+
+		.menu.active .toggle{
+			transform: rotate(360deg);
+			box-shadow: 0 1px 3px rgb(0,0,0,0.15), 0 0 0 1px #333, 0 0 0 3px #fff;
+		}
+
+		.menu li
+		{
+			position: absolute;
+			left: 0;
+			list-style: none;
+			transition: 0.5s;
+			transform: rotate(calc(360deg/8 * var(--i)));
+			transform-origin: 110px;
+			scale: 0;
+			transition-delay: calc(0.05s * var(--i));
+		}
+		.menu.active li
+		{
+			scale: 1;
+		}
+		.menu li a
+		{
+			position: relative;
+			display: flex;
+			transform: rotate(calc(360deg/-8 * var(--i)));
+			width: 40px;
+			height: 40px;
+			background: #fff;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border-radius: 50%;
+			font-size: 1.75em;
+			color: var(--clr);
+			box-shadow: 0 3px 4px rgba(0,0,0,0.15);
+			transition: 0.5s;
+		}
+		.menu li:hover a
+		{
+			font-size: 2em;
+			box-shadow: 0 0 0 2px var(--clr), 0 0 0 6px #fff;
+		}
+
+		@media screen and (min-width: 768px) {
+			.menu{
+				width:19%;
+				bottom: 23px;
+				right: 18px;
+				z-index: 10;
+			}
+		}
+		
+
+
+		
+
+      /*mobiles*/
+		@media (min-width: 600px ) and (max-width: 600px){
+			.whatsapp-img{
+				width: 18%;
+				bottom: 25px;
+				right: 200px;
+				position: fixed;
+			}
+			
+		}
+
+         /*tablet*/
+		
+
