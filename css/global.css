@@ -138,8 +138,8 @@ padding:0;
 /********************* header_main_end ****************/
 /********************* header ****************/
 #header{
- border-bottom: 1px solid #77b81e;
- border-top: 1px solid #77b81e;
+ border-bottom: 1px solid #191970;
+ border-top: 1px solid #191970;
   }
 #header .navbar-default {
 background-color: #fff;
@@ -242,7 +242,7 @@ font-weight:bold;
 color:#000;
 }
 #header .navbar-default {
-background: #77B81E;
+background: #191970;
 border: none;
 padding-top: 10px;
 padding-bottom: 10px;
@@ -432,8 +432,8 @@ color: #8c3232;
   color: #FFf;
 }
 #snapchatfooter:hover{
-  background-color: #FFFC00;
-  border: 1px solid #FFFC00;
+  background-color: #CD201F;
+  border: 1px solid #CD201F;
   color: #FFf; 
 }
 #instagramfooter:hover{
@@ -579,6 +579,7 @@ color: #8c3232;
 #header .dropdown-menu-large {
  background-color: #fff;
 }
+
 }
 
 @media (min-width:470px) and (max-width:767px) { 

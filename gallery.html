@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>AshrayLadiesHostel</title>
+    <title>AshrayLadiesHostel | Gallery</title>
+	<link rel="icon" type="image/x-icon" href="./image/ALH.png">
 	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/global.css" rel="stylesheet">
@@ -89,7 +90,7 @@
 		</div>
 	   </section>
 	   <div class = "whatsapp-main">
-		<a href="https://wa.me/919390898106"><img src="./image/whatsapp.png" width="10%" class="whatsapp-img"></a>
+		<a href="https://wa.me/917981665689"><img src="./image/whatsapp.png" width="10%" class="whatsapp-img"></a>
 	</div>
 	   <section id="header" class="cd-secondary-nav" class="clearfix">
 		<nav class="navbar navbar-default" role="navigation" style="background-color: #191970; color: #191970;border: 5px solid #fffdfdfd; border-width: thin;">
@@ -102,7 +103,7 @@
 			   <span class="icon-bar"></span>
 			   <span class="icon-bar"></span>
 			 </button>
-			 <a class="navbar-brand" href="index.html"><img src="./img/logo.png" width="210" height="35" 	style="filter: brightness(100%) ; padding-bottom: 1px;  "/></a>
+			 <a class="navbar-brand" href="index.html"><img src="./image/logo.png" width="210" height="35" 	style="filter: brightness(100%) ; padding-bottom: 1px;  "/></a>
 		   </div>
 	   
 		   <!-- Collect the nav links, forms, and other content for toggling -->
@@ -263,26 +264,26 @@
 <div class="menu">
 	<div class="toggle"><ion-icon name="share-social"></ion-icon></div>
 	<li style="--i:0;--clr:#1877f2;">
-		<a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+		<a class="facebook" target="blank"><ion-icon name="logo-facebook"></ion-icon></a>
 	
 	</li>
 	<li style="--i:1;--clr:#25d366;">
-		<a href="#"><ion-icon name="logo-whatsapp"></ion-icon></a>
+		<a class="whatsapp" target="blank"><ion-icon name="logo-whatsapp"></ion-icon></a>
 	
 	</li>
 	<li style="--i:2;--clr:#1da1f2;">
-		<a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+		<a class="twitter" target="blank"><ion-icon name="logo-twitter"></ion-icon></a>
 	
 	</li>
 
 	
-	<li style="--i:6;--clr:#c32aa3;">
-		<a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+	<li style="--i:6;--clr:#0a66c2;">
+		<a class="linkedin" target="blank"><ion-icon name="logo-linkedin"></ion-icon></a>
 	
 	</li>  
 
-	<li style="--i:7;--clr:#FFFC00;">
-		<a href="#"><ion-icon name="logo-snapchat"></ion-icon></ion-icon></a>
+	<li style="--i:7;--clr:#FF4500;">
+		<a class="reddit" target="blank"><ion-icon name="logo-reddit"></ion-icon></a>
 	
 	</li>
 
@@ -298,6 +299,25 @@
 		menu.classList.toggle('active')
 	}
 </script>
+<script>
+	//const link = encodeURI('https://openjavascript.info');
+	const link = encodeURI('https://www.google.com/search?q=F9PV%2BX95%2C+K+P+H+B+Phase+3%2C+Kukatpally%2C+Hyderabad%2C+Telangana+500072&rlz=1C1UEAD_enIN1063IN1067&oq=F9PV%2BX95%2C+K+P+H+B+Phase+3%2C+Kukatpally%2C+Hyderabad%2C+Telangana+500072&aqs=chrome..69i57.1368j0j9&sourceid=chrome&ie=UTF-8');
+	const msg = encodeURIComponent('Our Hostel Management helps to give confort place and quite room to stay with others. So, Book now As soons as possible through using our website link..........  Thank You');
+	const title = encodeURIComponent('Welcome to Ashray Ladies Hostel');
+	const fb = document.querySelector('.facebook');
+	fb.href = `https://www.facebook.com/share.php?u=${link}`;
+	const twitter = document.querySelector('.twitter');
+	twitter.href = `http://twitter.com/share?&url=${link}&text=${msg}&hashtags=javascript,programming`;
+	const linkedIn = document.querySelector('.linkedin');
+	linkedIn.href = `https://www.linkedin.com/sharing/share-offsite/?url=${link}`;
+	const reddit = document.querySelector('.reddit');
+	reddit.href = `http://www.reddit.com/submit?url=${link}&title=${title}`;
+	const whatsapp = document.querySelector('.whatsapp');
+	whatsapp.href = `https://api.whatsapp.com/send?text=${msg}: ${link}`;
+	//const telegram = document.querySelector('.telegram');
+	//telegram.href = `https://telegram.me/share/url?url=${link}&text=${msg}`;
+	</script>
+
 
 <section id="footer">
 	<div class="footer_inner clearfix">
@@ -307,7 +327,7 @@
 	   <div class="col-sm-3">
 		<div class="footer_1">
 		 <h3 >Ashray Ladies Hostel</h3><br>
-		 <p>Our Ashray Ladies Hostel to the best choice.Our Hostel will helps you people meet, happy atmosphere,Freedom,Suit your badget,better location to buy products.</p>
+		 <p>Our Ashray Ladies Hostel to the best choice. Our Hostel will helps you people meet, happy atmosphere, Freedom, Suit your badget, better location to buy products.</p>
 		</div>
 	   </div>
 	   <div class="col-sm-3">
@@ -316,7 +336,7 @@
 		 <ul>
 			 <li><i class="fa fa-map-marker"></i> Kbph colony, near temple bus stop, TS, 500072.</li>
 			 <li><i class="fa fa-phone"></i> Phone:(+91) 9700750072</li>
-			 <li><i class="fa fa-envelope"></i> <a href="#">AshrayLadiesHostel@gmail.com</a></li><br>
+			 <li><i class="fa fa-envelope"></i> <a href="mailto:ashrayladieshostel@gmail.com?subject=New Query" style="text-decoration: none;">AshrayLadiesHostel@gmail.com</a></li><br>
 		 </ul>
 		</div>
 	   </div>
@@ -324,12 +344,12 @@
 		<div class="footer_3">
 		 <h3>Follow Us</h3><br>
 		 <ul>
-			<li><a href="#"><i class="fa fa-facebook"  id="facebookfooter"></i></a></li>
-			<li><a href="#"><i class="fa fa-snapchat" id="snapchatfooter"></i></a></li>
-			<li><a href="#"><i class="fa fa-twitter" id="twitterfooter"></i></a></li> 
-			 
-			<li><a href="#"><i class="fa fa-instagram" id="instagramfooter"></i></a></li>          		   
-		 </ul><br>
+			<li><a href="https://www.facebook.com/profile.php?id=61551007559747"><i class="fa fa-facebook"  id="facebookfooter"></i></a></li>
+			<li><a href="https://youtube.com/@AshrayLadiesHostel?si=xTtj7OGG6UBdYIVk"><i class="fa fa-youtube-play" id="snapchatfooter"></i></a></li>
+			<li><a href="https://twitter.com/Ashrayhostel256"><i class="fa fa-twitter" id="twitterfooter"></i></a></li>   
+			<li><a href="https://www.instagram.com/ashrayladieshostel/"><i class="fa fa-instagram" id="instagramfooter"></i></a></li>          		   
+	   </ul><br>
+ 
 		</div>
 	   </div>
 	   <div class="col-sm-3">
